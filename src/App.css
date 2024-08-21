@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+.blueline {
+  position: relative;
+  display: inline-block;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 1rem;
+  color: #000; /* Default text color */
+  background: linear-gradient(to right, #000, #434343); /* Linear gradient from black to dark gray */
+  -webkit-background-clip: text; /* Clip background to text */
+  background-clip: text; /* Clip background to text */
+  text-fill-color: transparent; /* Make text color transparent to show gradient */
+  text-align: center; /* Center align the text */
+  display: block; /* Ensure the text takes full width */
+  width: fit-content; /* Adjust width to fit content */
+  margin: 0 auto; /* Center horizontally */
+  text-shadow: 
+    0 0 5px rgba(255, 69, 0, 0.8), 
+    0 0 10px rgba(255, 69, 0, 0.8),
+    0 0 15px rgba(255, 69, 0, 0.8),
+    0 0 20px rgba(255, 69, 0, 0.8),
+    0 0 25px rgba(255, 69, 0, 0.8),
+    0 0 30px rgba(255, 69, 0, 0.8),
+    0 0 35px rgba(255, 69, 0, 0.8),
+    0 0 40px rgba(255, 69, 0, 0.8);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blueline::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px; /* Adjust this value to control the distance from the text */
+  width: 70%; /* Adjust the width of the line */
+  height: 4px; /* Adjust the height of the line */
+  background-color: #3490dc; /* Set your desired blue color */
+  border-radius: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Topic {
+  position: relative;
+  display: inline-block;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 1rem;
+  color: #000; /* Default text color */
+  background: linear-gradient(to right, #000, #434343); /* Linear gradient from black to dark gray */
+  -webkit-background-clip: text; /* Clip background to text */
+  background-clip: text; /* Clip background to text */
+  text-fill-color: transparent; /* Make text color transparent to show gradient */
+  text-align: center; /* Center align the text */
+  display: block; /* Ensure the text takes full width */
+  width: fit-content; /* Adjust width to fit content */
+  margin: 0 auto; /* Center horizontally */
+  font-size: 7rem; /* Increase font size */
+  text-shadow: 
+    0 0 5px rgba(0, 0, 255, 0.6), 
+    0 0 10px rgba(0, 0, 255, 0.6),
+    0 0 15px rgba(0, 0, 255, 0.6),
+    0 0 20px rgba(0, 0, 255, 0.6),
+    0 0 25px rgba(0, 0, 255, 0.6),
+    0 0 30px rgba(0, 0, 255, 0.6),
+    0 0 35px rgba(0, 0, 255, 0.6),
+    0 0 40px rgba(0, 0, 255, 0.6),
+    0 0 50px rgba(0, 0, 255, 0.8),
+    0 0 60px rgba(0, 0, 255, 0.8); /* Blue fire flame effect */
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .Topic {
+    font-size: 6rem; /* Adjust font size for medium screens */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 992px) {
+  .Topic {
+    font-size: 5rem; /* Adjust font size for smaller screens */
   }
 }
+
+@media (max-width: 768px) {
+  .Topic {
+    font-size: 4rem; /* Adjust font size for mobile screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .Topic {
+    font-size: 3rem; /* Adjust font size for very small screens */
+  }
+}
+
+
+
+header {
+  position: fixed; /* Keep the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make sure it spans the full width */
+  z-index: 1000; /* Ensure it stays above other content */
+  background-color: #333; /* Ensure the background color is solid for visibility */
+  transition: top 0.3s; /* Optional: for smooth appearance/disappearance */
+}
+
+body {
+  padding-top: 8rem; /* Add padding to avoid content being hidden behind the navbar */
+}
+
+
+ul {
+  z-index: 20; /* Ensure the mobile menu is above other elements */
+}
+
+
