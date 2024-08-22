@@ -23,20 +23,33 @@ export default function Navbar() {
     return (
         <header className="p-4 bg-black bg-opacity-85 text-gray-100 dark:text-gray-800">
             <div className="container flex justify-between h-16 mx-auto md:justify-center md:space-x-8">
-                <ul className={`items-stretch hidden space-x-3 md:flex ${isMenuOpen ? 'block' : 'hidden'}`}>
+                <ul className="items-stretch hidden space-x-3 md:flex">
                     <li className="flex">
-                        <Link to="/event" className="flex items-center px-4 -mb-1 border-b-2 dark:border- hover:text-violet-400">Event</Link>
+                        <Link to="/home" className="flex items-center px-4 -mb-1 border-b-2 border-transparent hover:text-violet-400">Home</Link>
                     </li>
                     <li className="flex">
-                        <Link to="/about" className="flex items-center px-4 -mb-1 border-b-2 dark:border- hover:text-violet-400">About us</Link>
-                    </li>
-                    <li className="flex">
-                        <Link to="/home" className="flex items-center px-4 -mb-1 border-b-2 dark:border-  hover:text-violet-400">Home</Link>
+                        <Link to="/event" className="flex items-center px-4 -mb-1 border-b-2 border-transparent hover:text-violet-400">Event</Link>
                     </li>
                 </ul>
                 <Link to="/home" aria-label="Back to homepage" className="flex items-center p-2">
                     <img src={must} alt="Logo" className="w-8 h-8" />
                 </Link>
+                <ul className="items-stretch hidden space-x-3 md:flex">
+                    <li className="flex">
+                        <Link to="/about" className="flex items-center px-4 -mb-1 border-b-2 border-transparent hover:text-violet-400">About Us</Link>
+                    </li>
+                    <li className="flex">
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSeEwPrmLVkL-y2ODVK_gzJcSMSV5FU_equNSfrjlXzOnw2dnw/viewform"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center px-4 -mb-1 border-b-2 border-transparent hover:text-violet-400"
+                        >
+                            Register
+                        </a>
+                    </li>
+                </ul>
+
                 <button
                     title="Menu"
                     type="button"
@@ -48,17 +61,30 @@ export default function Navbar() {
                     </svg>
                 </button>
             </div>
-                <ul className={`absolute top-16 left-0 w-full bg-black bg-opacity-70 md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-                    <li className="flex">
-                        <Link to="/home" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>Home</strong></Link>
-                    </li>
-                    <li className="flex">
-                        <Link to="/event" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>Event</strong></Link>
-                    </li>
-                    <li className="flex">
-                        <Link to="/about" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300border-b-2 dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>About Us</strong></Link>
-                    </li>
-                </ul>
+            <ul className={`absolute top-16 left-0 w-full bg-black bg-opacity-70 md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+                <li className="flex">
+                    <Link to="/home" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 border-transparent dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>Home</strong></Link>
+                </li>
+                <li className="flex">
+                    <Link to="/event" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 border-transparent dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>Event</strong></Link>
+                </li>
+                <li className="flex">
+                    <Link to="/about" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 border-transparent dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>About Us</strong></Link>
+                </li>
+                <li className="flex">
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeEwPrmLVkL-y2ODVK_gzJcSMSV5FU_equNSfrjlXzOnw2dnw/viewform"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 border-transparent dark:border-gray-700 hover:text-violet-400"
+                        onClick={toggleMenu}
+                    > <strong>
+                        Register
+                    </strong>
+                        
+                    </a>
+                </li>
+            </ul>
         </header>
     );
 }

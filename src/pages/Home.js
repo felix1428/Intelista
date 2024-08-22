@@ -48,7 +48,7 @@ export default function Home() {
             Explore Events
           </button>
           <a
-            href="https://forms.gle/your-google-form-id" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeEwPrmLVkL-y2ODVK_gzJcSMSV5FU_equNSfrjlXzOnw2dnw/viewform" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-3 font-semibold rounded bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 transition-colors duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-gray-200"
