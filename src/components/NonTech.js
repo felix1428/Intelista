@@ -16,7 +16,7 @@ export default function NonTech(){
       }, 100); // Delay to ensure navigation has occurred
   };
     return(
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 ml-9">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 ml-4 md:ml-9">
         <div className="max-w-xs rounded-md shadow-md bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800">
           <img src={baloon} alt="" className="object-cover object-center w-full rounded-t-md h-72 bg-gray-500 dark:bg-gray-500" />
           <div className="flex flex-col justify-between px-16 py-6 space-y-8"> 
