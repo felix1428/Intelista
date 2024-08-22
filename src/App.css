@@ -36,6 +36,12 @@
   background-color: #3490dc; /* Set your desired blue color */
   border-radius: 2px;
 }
+.hour{
+
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+}
 
 .Topic {
   position: relative;
@@ -115,4 +121,36 @@ ul {
   z-index: 20; /* Ensure the mobile menu is above other elements */
 }
 
+.container {
+  position: relative;
+}
 
+.undo-button {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.undo-button:hover {
+  background-color: #333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.undo-button svg {
+  width: 24px; /* Adjust icon size as needed */
+  height: 24px; /* Adjust icon size as needed */
+  fill: currentColor; /* Uses the button's text color */
+}

@@ -21,7 +21,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <header className="p-4 bg-black bg-opacity-50 text-gray-100 dark:text-gray-800">
+        <header className="p-4 bg-black bg-opacity-85 text-gray-100 dark:text-gray-800">
             <div className="container flex justify-between h-16 mx-auto md:justify-center md:space-x-8">
                 <ul className={`items-stretch hidden space-x-3 md:flex ${isMenuOpen ? 'block' : 'hidden'}`}>
                     <li className="flex">
@@ -48,17 +48,17 @@ export default function Navbar() {
                     </svg>
                 </button>
             </div>
-            <ul className={`absolute top-16 left-0 w-full bg-black bg-opacity-70 md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-                <li className="flex">
-                    <Link to="/home" className="flex items-center px-4 py-2 text-gray-100 dark:text-gray-800 border-b-2 dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}>Home</Link>
-                </li>
-                <li className="flex">
-                    <Link to="/event" className="flex items-center px-4 py-2 text-gray-100 dark:text-gray-800 border-b-2 dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}>Event</Link>
-                </li>
-                <li className="flex">
-                    <Link to="/about" className="flex items-center px-4 py-2 text-gray-100 dark:text-gray-800 border-b-2 dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}>About Us</Link>
-                </li>
-            </ul>
+                <ul className={`absolute top-16 left-0 w-full bg-black bg-opacity-70 md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+                    <li className="flex">
+                        <Link to="/home" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>Home</strong></Link>
+                    </li>
+                    <li className="flex">
+                        <Link to="/event" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>Event</strong></Link>
+                    </li>
+                    <li className="flex">
+                        <Link to="/about" className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300border-b-2 dark:border-gray-700 hover:text-violet-400" onClick={toggleMenu}><strong>About Us</strong></Link>
+                    </li>
+                </ul>
         </header>
     );
 }

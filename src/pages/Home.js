@@ -1,6 +1,7 @@
 import React from 'react';
 import Timer from '../components/Timer'; // Ensure Timer component is properly imported
-import gif from '../images/gif.png';
+import videoSrc from '../images/home page.mp4' // Corrected the import to match video source
+import audioSr from '../images/Jack Sparrow - Bgm.mp3'; // Corrected the import to match audio source
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,25 +10,28 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <div className="p-5 mx-auto sm:p-10 md:p-16 flex-grow">
-        <h1 className="Topic text-5xl font-bold text-white text-center mb-8">
-          Intelista CountDown Begins Now
-        </h1>
-        <div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
-          <img 
-            src={gif} 
-            alt="Activewear" 
-            className="w-full h-60 sm:h-96 bg-gray-500 dark:bg-gray-500" 
-          />
-          <div className="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md bg-gray-900 bg-opacity-70 dark:bg-gray-50 dark:bg-opacity-50">
+      {/* Audio player to play background music */}
+      <audio src={audioSr} autoPlay loop />
 
+      <div className="p-5 mx-auto sm:p-10 md:p-16 flex-grow">
+        <h2 className="Topic text-5xl font-bold text-white text-center mb-8">
+          Intelista CountDown Begins Now
+        </h2>
+        
+        <div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
+          {/* Video player with proper styling */}
+          <video 
+            src={videoSrc} 
+            className="w-full h-full object-cover bg-gray-500 dark:bg-gray-500" 
+            autoPlay 
+            loop 
+            muted
+          ></video>
+          <div className="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md bg-gray-900 bg-opacity-70 dark:bg-gray-50 dark:bg-opacity-50">
             <div className="space-y-2">
-              <a 
-                rel="noopener noreferrer" 
-                href="http://www.w3.org/2000/svg" 
-                className="inline-block text-2xl font-semibold text-white sm:text-3xl">
+              <span className="inline-block text-2xl font-semibold text-white sm:text-3xl">
                 Time's Ticking - Are You Ready Buddys?
-              </a>
+              </span>
             </div>
             <div className="timer text-gray-100 dark:text-gray-800">
               <Timer />
@@ -44,7 +48,7 @@ export default function Home() {
             Explore Events
           </button>
           <a
-            href="https://forms.gle/your-google-form-id" // Replace with your Google Form URL
+            href="https://forms.gle/your-google-form-id" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-3 font-semibold rounded bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 transition-colors duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-gray-200"
