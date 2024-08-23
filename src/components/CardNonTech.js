@@ -95,33 +95,20 @@ export default function CardNonTech() {
         { text: "There will be only one winning team." }
     ];
 
+    const freeFireRules = [
+        { text: "Registration: Register before the event. Late entries won't be accepted." },
+        { text: "Match Format: Squad matches in specific game modes (e.g., Battle Royale, Clash Squad)." },
+        { text: "Device & Network: Ensure devices are charged and connected to stable internet. No rematches for technical issues." },
+        { text: "Fair Play: No cheating, hacking, or abusive behavior. Violators will be disqualified." },
+        { text: "Team Composition: Stick to your registered lineup. Substitutions allowed if informed before the event." },
+        { text: "Match Timings: Join the lobby 10 minutes before the match. Late teams will be disqualified." },
+        { text: "Scoring: Points based on rankings and kills. The highest-scoring team wins." },
+        { text: "Disputes: Report issues immediately. Organizer decisions are final." },
+        { text: "Streaming: Event may be live-streamed. Participants agree to be featured and should not stream their gameplay." }
+    ];
+
     return (
         <div>
-            {/* Navigation Menu */}
-            <nav className="sticky top-0 bg-gray-800 text-white shadow-lg">
-                <ul className="flex justify-center space-x-4 p-4">
-                    <li>
-                        <a href="#pirates-vision" className="hover:underline">
-                            Pirates Vision
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#bounceblitz" className="hover:underline">
-                            Bounceblitz
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#chess-sparrow" className="hover:underline">
-                            Chess Sparrow
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#treasure-hunt" className="hover:underline">
-                            Hunt for the Black Pearl
-                        </a>
-                    </li>
-                </ul>
-            </nav>
 
             {/* Section Contents */}
             <section className="space-y-8">
@@ -149,17 +136,25 @@ export default function CardNonTech() {
                     description="A thrilling QR code-based treasure hunt with a single winning team."
                     rules={treasureHuntRules}
                 />
+                <SectionContent
+                    id="free-fire"
+                    title="Free Fire"
+                    description="A competitive event featuring squad matches in various game modes."
+                    rules={freeFireRules}
+                />
             </section>
             <div className="flex justify-center mt-8">
-               
-               <button
-                  type="button"
-                  className="undo-button"
-                  onClick={() => navigate("/nontech")}
-                  >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/><path d="M13.293 7.293 8.586 12l4.707 4.707 1.414-1.414L11.414 12l3.293-3.293-1.414-1.414z"/></svg>
-                  </button>
-              </div>
+                <button
+                    type="button"
+                    className="undo-button"
+                    onClick={() => navigate("/nontech")}
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                        <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z" />
+                        <path d="M13.293 7.293 8.586 12l4.707 4.707 1.414-1.414L11.414 12l3.293-3.293-1.414-1.414z" />
+                    </svg>
+                </button>
+            </div>
         </div>
     );
 }

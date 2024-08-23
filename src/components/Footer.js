@@ -69,7 +69,7 @@ export default function Footer() {
 			</div>
 		</div>
 	</div>
-	<div className="py-6 text-sm text-center text-gray-400 dark:text-gray-600">© 1968 Company Co. All rights reserved.</div>
+	<div className="py-6 text-sm text-center text-gray-400 dark:text-gray-600">© Team Design Freaks . All rights reserved.</div>
 </footer>
 
   );

@@ -1,11 +1,20 @@
 import React from 'react';
 import Contact from '../components/Contact'; // Adjust the import path based on your project structure
 import Footer from '../components/Footer'; // Correctly import Footer component
+import abgvideo from '../images/abgvideo.mp4';
 
 export default function About() {
   return (
     <div>
-      <section className="my-8 bg-gray-800 bg-opacity-50 dark:bg-gray-100 dark:bg-opacity-50 text-gray-100 dark:text-gray-800">
+        {/* Background video */}
+        <video 
+                src={abgvideo} 
+                className="fixed top-0 left-0 w-full h-full object-cover -z-10"
+                autoPlay 
+                loop 
+                playsInline
+            ></video>
+      <section className="my-8 bg-black bg-opacity-20 dark:bg-gray-100 dark:bg-opacity-50 text-gray-100 dark:text-gray-800">
         <div className="container flex flex-col items-center p-4 mx-auto space-y-6 md:p-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +36,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="my-8 bg-gray-800 bg-opacity-50 dark:bg-gray-100 dark:bg-opacity-50 text-gray-100 dark:text-gray-800">
+      <section className="my-8 bg-black bg-opacity-10 dark:bg-gray-100 dark:bg-opacity-10 text-gray-100 dark:text-gray-800">
         <Contact />
       </section>
 

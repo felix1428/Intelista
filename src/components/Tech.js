@@ -21,7 +21,8 @@ export default function Tech() {
                 <img src={paperpresent} alt="Event 1" className="object-cover object-center w-full rounded-t-md h-72 bg-gray-500 dark:bg-gray-500" />
                 <div className="flex flex-col justify-between px-16 py-6 space-y-8">
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-semibold tracking-wide">IDEA BLITZ</h2>
+                        <h2 className="text-2xl text-center font-semibold tracking-wide">Innovative Voyage</h2>
+                        <p className="text-gray-100 text-center dark:text-gray-800">( Paper Presentation )</p>
                     </div>
                     <button 
                         type="button" 
@@ -37,7 +38,8 @@ export default function Tech() {
                 <img src={programming}alt="Event 2" className="object-cover object-center w-full rounded-t-md h-72 bg-gray-500 dark:bg-gray-500" />
                 <div className="flex flex-col justify-between px-16 py-6 space-y-8">
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-semibold tracking-wide">CODING SENSEI</h2>
+                        <h2 className="text-2xl text-center font-semibold tracking-wide">Coders of the Caribbean</h2>
+                        <p className="text-gray-100 text-center dark:text-gray-800">( Programming )</p>
                     </div>
                     <button 
                         type="button" 
@@ -53,7 +55,8 @@ export default function Tech() {
                 <img src={webdev} alt="Event 3" className="object-cover object-center w-full rounded-t-md h-72 bg-gray-500 dark:bg-gray-500" />
                 <div className="flex flex-col justify-between px-16 py-6 space-y-8">
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-semibold tracking-wide">WEB DESIGN</h2>
+                        <h2 className="text-3xl text-center font-semibold tracking-wide">Pirate's Arts</h2>
+                        <p className="text-gray-100 text-center dark:text-gray-800">( Web Design )</p>
                     </div>
                     <button 
                         type="button" 
@@ -69,7 +72,8 @@ export default function Tech() {
                 <img src={technicalquiz}alt="Event 4" className="object-cover object-center w-full rounded-t-md h-72 bg-gray-500 dark:bg-gray-500" />
                 <div className="flex flex-col justify-between px-16 py-6 space-y-8">
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-semibold tracking-wide">TECHNICAL QUIZ</h2>
+                        <h2 className="text-2xl  text-center font-semibold tracking-wide">The Caribbean Cipher</h2>
+                        <p className="text-gray-100 text-center dark:text-gray-800">( Technical Quiz )</p>
                     </div>
                     <button 
                         type="button" 

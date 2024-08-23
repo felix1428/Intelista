@@ -22,7 +22,7 @@ export default function NonTech(){
           <div className="flex flex-col justify-between px-16 py-6 space-y-8"> 
             <div className="space-y-2">
               <h2 className="text-3xl font-semibold tracking-wide">Bounceblitz</h2>
-              {/* <p className="text-gray-100 dark:text-gray-800">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p> */}
+              <p className="text-gray-100 text-center dark:text-gray-800">( Balloon )</p>
             </div>
             <button 
                         type="button" 
@@ -39,7 +39,7 @@ export default function NonTech(){
           <div className="flex flex-col justify-between px-16 py-6 space-y-8"> 
             <div className="space-y-2">
               <h2 className="text-3xl font-semibold tracking-wide">Chess Island</h2>
-              {/* <p className="text-gray-100 dark:text-gray-800">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p> */}
+              <p className="text-gray-100 text-center dark:text-gray-800">( Chess )</p>
             </div>
             <button 
                         type="button" 
@@ -55,8 +55,8 @@ export default function NonTech(){
           <img src={bioscope} alt="" className="object-cover object-center w-full rounded-t-md h-72 bg-gray-500 dark:bg-gray-500" />
           <div className="flex flex-col justify-between px-16 py-6 space-y-8">
             <div className="space-y-2">
-              <h2 className="text-3xl font-semibold tracking-wide">Pirate'sVision</h2>
-              {/* <p className="text-gray-100 dark:text-gray-800">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p> */}
+              <h2 className="text-2xl font-semibold text-center tracking-wide">Pirate's Vision</h2>
+              <p className="text-gray-100 text-center dark:text-gray-800">( Connections )</p>
             </div>
             <button 
                         type="button" 
@@ -73,7 +73,7 @@ export default function NonTech(){
           <div className="flex flex-col justify-between px-16 py-6 space-y-8"> 
             <div className="space-y-2">
               <h2 className="text-3xl font-semibold tracking-wide">Pirate's Hunt</h2>
-              {/* <p className="text-gray-100 dark:text-gray-800">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p> */}
+               <p className="text-gray-100 text-center dark:text-gray-800">( Treasure Hunt )</p>
             </div>
             <button 
                         type="button" 
@@ -90,12 +90,11 @@ export default function NonTech(){
           <div className="flex flex-col justify-between px-16 py-6 space-y-8"> 
             <div className="space-y-2">
               <h2 className="text-3xl font-semibold tracking-wide">Rogue Seas</h2>
-              {/* <p className="text-gray-100 dark:text-gray-800">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p> */}
+              <p className="text-gray-100 text-center dark:text-gray-800">( Free Fire )</p>
             </div>
             <button
-            //pending............................................................ 
                         type="button" 
-                        onClick={() => handleNavigation('#rouge-sea')} 
+                        onClick={() => handleNavigation('#free-fire')} 
                         className="px-8 py-3 font-semibold rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100"
                     >
                         Explore More
