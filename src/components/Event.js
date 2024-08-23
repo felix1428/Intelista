@@ -27,17 +27,10 @@ export default function Event() {
                     {/* Tech Event Section */}
                     <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
                         <img src={tech} alt="Tech Event" className="h-80 bg-gray-500 dark:bg-gray-500 aspect-video" />
-<<<<<<< HEAD
                         <div className="flex flex-col justify-center flex-1 p-6 bg-gray-800 bg-opacity-40 dark:bg-gray-100 dark:bg-opacity-80 text-gray-100 dark:text-gray-800">
                             <span className="text-xs uppercase text-gray-400 dark:text-gray-600">Yo-ho-ho, Pirates! </span>
                             <h3 className="text-3xl font-bold">Technical Events</h3>
                             <p className="my-6 text-white dark:text-gray-600">Ahoy, Pirates! Set sail into our exhilarating Technical event featuring a Paper Presentation, Coding Debug, Web Designing, and a challenging Technical Quiz, where you can showcase your skills and creativity</p>
-=======
-                        <div className="flex flex-col justify-center flex-1 p-6 bg-gray-800 bg-opacity-80 dark:bg-gray-100 dark:bg-opacity-80 text-gray-100 dark:text-gray-800">
-                            <span className="text-xs uppercase text-gray-400 dark:text-gray-600">Yo-ho-ho, Pirates! </span>
-                            <h3 className="text-3xl font-bold">Technical Events</h3>
-                            <p className="my-6 text-gray-400 dark:text-gray-600">Ahoy, Pirates! Set sail into our exhilarating Technical event featuring a Paper Presentation, Coding Debug, Web Designing, and a challenging Technical Quiz, where you can showcase your skills and creativity</p>
->>>>>>> 1a5da02afd4db98b3158c2dc2e94939c95a67d47
                             <button type="button" onClick={() => navigate('/tech')} className="self-start text-violet-400"><strong>Explore Tech Events</strong></button>
                             <Link to="/Tech" className="inline-flex items-center space-x-2 text-sm dark:text-violet-600">
                                 <span><strong>Learn More</strong></span>
@@ -51,17 +44,10 @@ export default function Event() {
                     {/* Non-Tech Event Section */}
                     <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
                         <img src={nontech} alt="Non-Tech Event" className="h-80 bg-gray-500 dark:bg-gray-500 aspect-video" />
-<<<<<<< HEAD
                         <div className="flex flex-col justify-center flex-1 p-6 bg-gray-800 bg-opacity-40 dark:bg-gray-100 dark:bg-opacity-80 text-gray-100 dark:text-gray-800">
                             <span className="text-xs uppercase text-gray-400 dark:text-gray-600">Yo-ho-ho, Pirates!</span>
                             <h3 className="text-3xl   text-whitefont-bold">Non - Technical Events</h3>
                             <p className="my-6 text-white dark:text-gray-600">Ahoy, Pirates! Check out our thrilling lineup of events where adventure awaits at every turn. From epic battles in Free Fire to the cunning Treasure Hunt, burst the Balloons, and outwit your opponents in Chess—get ready to conquer the seas of fun and excitement!</p>
-=======
-                        <div className="flex flex-col justify-center flex-1 p-6 bg-gray-800 bg-opacity-80 dark:bg-gray-100 dark:bg-opacity-80 text-gray-100 dark:text-gray-800">
-                            <span className="text-xs uppercase text-gray-400 dark:text-gray-600">Yo-ho-ho, Pirates!</span>
-                            <h3 className="text-3xl font-bold">Non - Technical Events</h3>
-                            <p className="my-6 text-gray-400 dark:text-gray-600">Ahoy, Pirates! Check out our thrilling lineup of events where adventure awaits at every turn. From epic battles in Free Fire to the cunning Treasure Hunt, burst the Balloons, and outwit your opponents in Chess—get ready to conquer the seas of fun and excitement!</p>
->>>>>>> 1a5da02afd4db98b3158c2dc2e94939c95a67d47
                             <button type="button" onClick={() => navigate('/nontech')} className="self-start text-violet-400"><strong>Explore Non-Tech Events</strong></button>
                             <Link to="/NonTech" className="inline-flex items-center space-x-2 text-sm dark:text-violet-600">
                                 <span><strong>Learn More</strong></span>
