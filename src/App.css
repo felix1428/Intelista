@@ -1,8 +1,39 @@
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
 .blueline {
   position: relative;
   display: inline-block;
   font-family: "Pirata One", system-ui;
   font-weight: 400;
+  font-style: normal;
+  margin-top:2rem;
+  margin-bottom: 1rem;
+  color: #000; /* Default text color */
+  background: linear-gradient(to right, #000, #434343); /* Linear gradient from black to dark gray */
+  -webkit-background-clip: text; /* Clip background to text */
+  background-clip: text; /* Clip background to text */
+  text-fill-color: transparent; /* Make text color transparent to show gradient */
+  text-align: center; /* Center align the text */
+  display: block; /* Ensure the text takes full width */
+  width: fit-content; /* Adjust width to fit content */
+  margin: 0 auto; /* Center horizontally */
+  text-shadow: 
+    0 0 5px rgba(255, 69, 0, 0.8), 
+    0 0 10px rgba(255, 69, 0, 0.8),
+    0 0 15px rgba(255, 69, 0, 0.8),
+    0 0 20px rgba(255, 69, 0, 0.8),
+    0 0 25px rgba(255, 69, 0, 0.8),
+    0 0 30px rgba(255, 69, 0, 0.8),
+    0 0 35px rgba(255, 69, 0, 0.8),
+    0 0 40px rgba(255, 69, 0, 0.8);
+}
+.blu{
+  position: relative;
+  display: inline-block;
+  font-family: "Pirata One", system-ui;
+  font-weight: 500;
   font-style: normal;
   margin-bottom: 1rem;
   color: #000; /* Default text color */
@@ -30,17 +61,34 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -6px; /* Adjust this value to control the distance from the text */
+  bottom: -8px; /* Adjust this value to control the distance from the text */
   width: 70%; /* Adjust the width of the line */
   height: 4px; /* Adjust the height of the line */
-  background-color: #3490dc; /* Set your desired blue color */
+  background-color: #FF9B30; /* Set your desired blue color */
   border-radius: 2px;
+  box-shadow: 0 0 10px #00FCB9, 0 0 20px #00FCB9, 0 0 30px #00FCB9, 0 0 40px #00FCB9;
+  animation: glow-animation 2s infinite ease-in-out alternate;
 }
-.hour{
 
-    font-family: "Pirata One", system-ui;
-    font-weight: 400;
-    font-style: normal; 
+@keyframes glow-animation {
+  0% {
+    box-shadow: 0 0 10px #00FCB9, 0 0 20px #00FCB9, 0 0 30px #00FCB9, 0 0 40px #00FCB9;
+  }
+  100% {
+    box-shadow: 0 0 20px #00FCB9, 0 0 30px #00FCB9, 0 0 40px #00FCB9, 0 0 50px #00FCB9;
+  }
+}
+
+
+.hour {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pirate {
+  font-family: "Pirata One", system-ui;
+  color: #000;
 }
 
 .Topic {
@@ -73,8 +121,6 @@
     0 0 60px rgba(0, 0, 255, 0.8); /* Blue fire flame effect */
 }
 
-
-
 /* Responsive styles */
 @media (max-width: 1200px) {
   .Topic {
@@ -100,8 +146,6 @@
   }
 }
 
-
-
 header {
   position: fixed; /* Keep the navbar fixed at the top */
   top: 0;
@@ -115,7 +159,6 @@ header {
 body {
   padding-top: 8rem; /* Add padding to avoid content being hidden behind the navbar */
 }
-
 
 ul {
   z-index: 20; /* Ensure the mobile menu is above other elements */
@@ -153,4 +196,145 @@ ul {
   width: 24px; /* Adjust icon size as needed */
   height: 24px; /* Adjust icon size as needed */
   fill: currentColor; /* Uses the button's text color */
+}
+
+.animated-button1 {
+  background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
+  padding: 20px 40px;
+  margin: 12px;
+  display: inline-block;
+  position: relative; /* Added for absolute positioning of spans */
+  transform: translate(0%, 0%);
+  overflow: hidden;
+  color: #f7d4d4;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.animated-button1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ad8585;
+  opacity: 0;
+  transition: .2s opacity ease-in-out;
+}
+
+.animated-button1:hover::before {
+  opacity: 0.2;
+}
+
+.animated-button1 span {
+  position: absolute;
+}
+
+.animated-button1 span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, rgba(43, 8, 8, 0), #d92626);
+  animation: 2s animateTop linear infinite;
+}
+
+@keyframes animateTop {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animated-button1 span:nth-child(2) {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to top, rgba(43, 8, 8, 0), #d92626);
+  animation: 2s animateRight linear -1s infinite;
+}
+
+@keyframes animateRight {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animated-button1 span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, rgba(43, 8, 8, 0), #d92626);
+  animation: 2s animateBottom linear infinite;
+}
+
+@keyframes animateBottom {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animated-button1 span:nth-child(4) {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #d92626);
+  animation: 2s animateLeft linear -1s infinite;
+}
+
+@keyframes animateLeft {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Background glow animation */
+@keyframes glow-animation {
+  0% {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+  }
+  50% {
+    text-shadow: 0 0 20px #ffffff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+  }
+  100% {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+  }
+}
+
+.glow-text {
+  animation: glow-animation 2s ease-in-out infinite alternate;
+}
+
+/* Mobile styles for .content class */
+@media (max-width: 768px) {
+  .content {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .content {
+    display: inline-block;
+    text-align: center;
+  }
 }
