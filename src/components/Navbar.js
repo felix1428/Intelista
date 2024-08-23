@@ -40,7 +40,11 @@ export default function Navbar() {
                     </li>
                     <li className="flex">
                         <a
+<<<<<<< HEAD
                             href="https://docs.google.com/forms/d/e/1FAIpQLSfMQcQkRg3zTcEdklQJ3LgZ2YQMCfKadP2LxDfQGU6qJedfCw/viewform"
+=======
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSeEwPrmLVkL-y2ODVK_gzJcSMSV5FU_equNSfrjlXzOnw2dnw/viewform"
+>>>>>>> 1a5da02afd4db98b3158c2dc2e94939c95a67d47
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center px-4 -mb-1 border-b-2 border-transparent hover:text-violet-400"
@@ -73,7 +77,11 @@ export default function Navbar() {
                 </li>
                 <li className="flex">
                     <a
+<<<<<<< HEAD
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfMQcQkRg3zTcEdklQJ3LgZ2YQMCfKadP2LxDfQGU6qJedfCw/viewform"
+=======
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeEwPrmLVkL-y2ODVK_gzJcSMSV5FU_equNSfrjlXzOnw2dnw/viewform"
+>>>>>>> 1a5da02afd4db98b3158c2dc2e94939c95a67d47
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center px-4 py-2 text-gray-300 dark:text-gray-300 border-b-2 border-transparent dark:border-gray-700 hover:text-violet-400"

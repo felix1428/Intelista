@@ -61,7 +61,28 @@ export default function Home() {
             </a>
           </div>
         </div>
+<<<<<<< HEAD
         <Footer />
+=======
+        <div className="flex flex-col items-center gap-4 mt-8">
+          {/* Container to center buttons */}
+          <button
+            type="button" 
+            onClick={() => navigate('/event')} 
+            className="px-8 py-3 font-semibold rounded bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 transition-colors duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-gray-200"
+          >
+            Explore Events
+          </button>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeEwPrmLVkL-y2ODVK_gzJcSMSV5FU_equNSfrjlXzOnw2dnw/viewform" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-3 font-semibold rounded bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 transition-colors duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-gray-200"
+          >
+            Register
+          </a>
+        </div>
+>>>>>>> 1a5da02afd4db98b3158c2dc2e94939c95a67d47
       </div>
     </div>
   );
