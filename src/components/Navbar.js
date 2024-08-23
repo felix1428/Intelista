@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import must from "../images/must.jpeg";
+import must from "../images/must.png";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

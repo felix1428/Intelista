@@ -5,21 +5,29 @@ import audioSrc from '../images/Jack Sparrow - Bgm.mp3';
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
 import AudioPlayer from '../components/AudioPlayer';
+import intelista from '../images/Intelista.png';
 
 export default function Home() {
   const navigate = useNavigate();
 
   return (
     <div className="relative min-h-screen flex flex-col">
+<div className="flex items-center justify-center p-2 dark:bg-violet-600 dark:text-gray-50">
+  <img
+    src={intelista}
+    alt="Intelista"
+    style={{
+      width:'1000px',
+    }}
+    className="h-[150px] md:h-[200px] lg:h-[200px]"
+  />
+</div>
+
       {/* Background music player */}
       <AudioPlayer src={audioSrc} autoPlay loop />
 
       <div className="flex-grow">
         <div className="p-5 mx-auto sm:p-10 md:p-16 flex-grow">
-          <h2 className="Topic text-5xl font-bold text-white text-center mb-8">
-            Intelista Countdown Begins Now
-          </h2>
-
           <div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
             {/* Video player */}
             <video 

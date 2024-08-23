@@ -19,23 +19,14 @@ export default function Contact() {
       <div className="space-y-6">
         <div>
           <h3 className="text-2xl font-semibold text-gray-100 dark:text-gray-800">Coordinator</h3>
-          <p className="text-gray-400 dark:text-gray-600">Name: John Doe</p>
-          <p className="text-gray-400 dark:text-gray-600">Contact: 123-456-7890</p>
-          <p className="text-gray-400 dark:text-gray-600">Email: johndoe@example.com</p>
-        </div>
-
-        <div>
-          <h3 className="text-2xl font-semibold text-gray-100 dark:text-gray-800">Staff Coordinator</h3>
-          <p className="text-gray-400 dark:text-gray-600">Name: Jane Smith</p>
-          <p className="text-gray-400 dark:text-gray-600">Contact: 987-654-3210</p>
-          <p className="text-gray-400 dark:text-gray-600">Email: janesmith@example.com</p>
+          <p className="text-gray-400 dark:text-gray-600">Name: Shanmugam.S</p>
+          <p className="text-gray-400 dark:text-gray-600">Contact: +91 9962075982</p>
         </div>
 
         <div>
           <h3 className="text-2xl font-semibold text-gray-100 dark:text-gray-800">Register Team</h3>
-          <p className="text-gray-400 dark:text-gray-600">Name: Registration Team</p>
-          <p className="text-gray-400 dark:text-gray-600">Contact: 555-555-5555</p>
-          <p className="text-gray-400 dark:text-gray-600">Email: registerteam@example.com</p>
+          <p className="text-gray-400 dark:text-gray-600">Name: Sanjaynathan L</p>
+          <p className="text-gray-400 dark:text-gray-600">Contact: +91 9486735400</p>
         </div>
       </div>
     </div>
