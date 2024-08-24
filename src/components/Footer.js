@@ -9,7 +9,7 @@ export default function Footer() {
 		<div className="flex items-center justify-center w-12 h-12 rounded-full">
 			<img src={must} className="flex-shrink-0 w-18 h-18 rounded-full text-gray-900 dark:text-gray-50" alt="Description" />
 		</div>
-		<span className="pirate self-center text-2xl font-semibold">I N T E L I S T A</span>
+		<span className="pirateOne  self-center text-2xl font-semibold">I N T E L I S T A</span>
 		</div>
 
 		<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
@@ -17,7 +17,11 @@ export default function Footer() {
 				<h3 className="tracking-wide uppercase text-gray-50 dark:text-gray-900">Co Ordinator</h3>
 				<ul className="space-y-1">
 					<li>
-						<p rel="noopener noreferrer">Shanmugam</p>
+						<p rel="noopener noreferrer">Shanmugam S</p>
+						
+					</li>
+					<li>
+						<p rel="noopener noreferrer">Subashini M </p>
 					</li>
 					<li>
 						<p rel="noopener noreferrer">Contact +91 99620 75982</p>

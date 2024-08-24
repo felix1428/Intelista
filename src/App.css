@@ -90,6 +90,10 @@ html {
   font-family: "Pirata One", system-ui;
   color: #000;
 }
+.pirateOne {
+  font-family: "Pirata One", system-ui;
+  color:#0011FF;
+}
 
 .Topic {
   position: relative;
