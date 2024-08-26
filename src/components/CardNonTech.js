@@ -120,7 +120,7 @@ export default function CardNonTech() {
                 />
                 <SectionContent
                     id="bounceblitz"
-                    title="Bounceblitz (Ballon Game)"
+                    title="Bounceblitz (Balloon Game)"
                     description="A fun-filled game event featuring three rounds of skill-based challenges."
                     rules={bounceblitzRules}
                 />
