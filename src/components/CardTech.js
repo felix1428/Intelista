@@ -101,9 +101,6 @@ export default function CardTech() {
                     extraContent={
                         <>
                             <p><strong>INSTRUCTIONS:</strong></p>
-                            <p>1. In these languages you can flex in the upcoming coding Showdown: Python, Java, C, C++.</p>
-                            <p>2. We’ll start with easy-peasy questions and then ramp up the difficulty to medium—so don’t stress babe, it’s gonna be lit tonight!</p>
-                            <p>3. We’ve got you covered with coding environments, plus some paper and pens for when you need to sketch out those badass ideas.</p>
                             <p><strong>EVENT LINK:</strong> Keep it cool, Do not fall in Confusion Genjutsu, show off those skills, and let’s make this a code-tastic event!</p>
                             <p><strong>MODE:</strong> Solo.</p>
                             <p><strong>TIME:</strong> Round 1 – Debugging (20 min), Round 2 – Programming (40 min)</p>
