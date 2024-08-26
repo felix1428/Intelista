@@ -72,7 +72,7 @@ export default function Tech() {
                 <img src={technicalquiz}alt="Event 4" className="object-cover object-center w-full rounded-t-md h-72 b-gray-500 dark:b-gray-500" />
                 <div className="flex flex-col justify-between px-16 py-6 space-y-8">
                     <div className="space-y-2">
-                        <h2 className="pirate text-2xl  text-center font-semibold tracking-wide">The Caribbean Cipher</h2>
+                        <h2 className="pirate text-2xl  text-center font-semibold tracking-wide">The Caribbean Cipher War</h2>
                         <p className="text-gray-100 text-center dark:text-gray-800">( Technical Quiz )</p>
                     </div>
                     <button 
