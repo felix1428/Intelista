@@ -79,7 +79,7 @@ export default function CardTech() {
             <section className="space-y-8">
                 <SectionContent 
                     id="idea-blitz"
-                    title="Paper Presentation" 
+                    title="PAPER PRESENTATION" 
                     description={
                         <>
                             <p><strong>TEAM MEMBERS:</strong> Maximum 2 members per team.</p>
@@ -92,7 +92,7 @@ export default function CardTech() {
                 />
                 <SectionContent 
                     id="coding-sensei"
-                    title="Programming" 
+                    title="PROGRAMMING" 
                     description={
                         <>
                             <p><strong>OVERVIEW:</strong> Get ready to flex your coding skills in a lit two-round competition!</p>
