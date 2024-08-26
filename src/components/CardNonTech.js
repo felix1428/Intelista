@@ -114,7 +114,7 @@ export default function CardNonTech() {
             <section className="space-y-8">
                 <SectionContent
                     id="pirates-vision"
-                    title="Pirates Vision (Bioscope)"
+                    title="Pirates Vision (Connection)"
                     description="An exciting three-round quiz event involving movies, songs, and image identification."
                     rules={piratesVisionRules}
                 />
