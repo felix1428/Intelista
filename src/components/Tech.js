@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useNavigate } from "react-router-dom";
-import paperpresent from '../images/paper-present.gif';
+import paperpresent from '../images/paperpresent.gif';
 import programming from '../images/programming.gif';
 import webdev from '../images/webdev.gif';
 import technicalquiz from '../images/technicalquiz.gif';

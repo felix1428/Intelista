@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Event from './components/Event';
@@ -10,7 +9,7 @@ import NonTech from './components/NonTech';
 import VantaBackground from './components/VantaBackground';
 import CardTech from './components/CardTech';
 import CardNonTech from './components/CardNonTech';
-import AudioPlayer from './components/AudioPlayer'; // Import the AudioPlayer component
+
 
 function App() {
     return (
@@ -21,12 +20,8 @@ function App() {
 
                 {/* Main Content and Routing */}
                 <Routes>
-                    <Route path="/" element={
-                        <>
-                            <AudioPlayer />
-                            <Navigate to="/home" />
-                        </>
-                    } />
+                    {/* Redirect from root path to /home */}
+                    <Route path="/" element={<Navigate to="/home" />} />
                     <Route path="/home" element={<Home />} />
                     <Route path="/event" element={<Event />} />
                     <Route path="/about" element={<About />} />

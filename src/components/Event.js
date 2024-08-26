@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import tech from '../images/technical overall.gif';
+import tech from '../images/technicaloverall.gif';
 import bgVideo from '../images/bgvedio.mp4';
 import nontech from '../images/nontech.gif';
 import Footer from "./Footer";

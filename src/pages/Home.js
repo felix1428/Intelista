@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Timer from '../components/Timer';
-import videoSrc from '../images/home page.mp4';
-import audioSrc from '../images/Jack Sparrow - Bgm.mp3';
+import videoSrc from '../images/homepage.mp4';
+import audioSrc from '../images/JackSparrow - Bgm.mp3';
 import Footer from '../components/Footer';
 import AudioPlayer from '../components/AudioPlayer';
 import intelista from '../images/Intelista.png';
