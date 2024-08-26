@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Intelista/static/css/main.f61041bb.css",
+    "main.js": "/Intelista/static/js/main.8e5f5c51.js",
+    "static/media/bgvedio.mp4": "/Intelista/static/media/bgvedio.1f59dea526bf27a489b4.mp4",
+    "static/media/webdev.gif": "/Intelista/static/media/webdev.5c0c48a32d2049944803.gif",
+    "static/media/abgvideo.mp4": "/Intelista/static/media/abgvideo.2eb847c808d18a857af4.mp4",
+    "static/media/Freefire.gif": "/Intelista/static/media/Freefire.b0a6103fb0e5c4d9c6dd.gif",
+    "static/media/technicaloverall.gif": "/Intelista/static/media/technicaloverall.c00b4c1a0ec984e8ad76.gif",
+    "static/media/nontech.gif": "/Intelista/static/media/nontech.e43fa4a7b73d98aaeafc.gif",
+    "static/media/baloon.gif": "/Intelista/static/media/baloon.f2b464fb0ff1e9ab423c.gif",
+    "static/media/bioscope.gif": "/Intelista/static/media/bioscope.283f9ff405930556f0ab.gif",
+    "static/media/technicalquiz.gif": "/Intelista/static/media/technicalquiz.af914880ceac99a5ad42.gif",
+    "static/media/programming.gif": "/Intelista/static/media/programming.83ec98b4e0880a76fcce.gif",
+    "static/media/paperpresent.gif": "/Intelista/static/media/paperpresent.c7128bb3c9fef15ea609.gif",
+    "static/media/treasurehunt.gif": "/Intelista/static/media/treasurehunt.47d235cc41c60ec7302b.gif",
+    "static/media/must.png": "/Intelista/static/media/must.16ae3d8851925fe22644.png",
+    "static/media/chess.gif": "/Intelista/static/media/chess.bb13bcab3116f7b993a9.gif",
+    "static/media/homepage.mp4": "/Intelista/static/media/homepage.d0cba1097f98ffc7a782.mp4",
+    "static/media/Intelista.png": "/Intelista/static/media/Intelista.1a63a17771a67fb50655.png",
+    "static/media/JackSparrow - Bgm.mp3": "/Intelista/static/media/JackSparrow - Bgm.80ee69ab731b2904c232.mp3",
+    "static/media/logo.png": "/Intelista/static/media/logo.5af50c15e51c6349923b.png",
+    "static/media/contact.png": "/Intelista/static/media/contact.9c12427f8c9889ca2324.png",
+    "index.html": "/Intelista/index.html",
+    "main.f61041bb.css.map": "/Intelista/static/css/main.f61041bb.css.map",
+    "main.8e5f5c51.js.map": "/Intelista/static/js/main.8e5f5c51.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f61041bb.css",
+    "static/js/main.8e5f5c51.js"
+  ]
+}
