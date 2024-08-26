@@ -41,9 +41,9 @@ export default function CardTech() {
     ];
 
     const rulesSection2 = [
-        { text: "In these languages you can flex in the upcoming coding Showdown: Python, Java, C, C++ ." },
-        { text: "We'll start with easy-peasy questions and then ramp up the difficulty." },
-        { text: "We’ll provide coding environments and paper for notes." },
+        { text: "In these languages you can flex in the upcoming coding Showdown: Python, C/C++, Java" },
+        { text: "We’ll start easy-peasy questions and then ramp up the difficulty to medium." },
+        { text: "We’ve got you covered with coding environments, plus some paper and pens for when you need to sketch out those ideas" },
     ];
 
     const rulesSection3 = [
