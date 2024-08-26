@@ -101,9 +101,8 @@ export default function CardTech() {
                     extraContent={
                         <>
                             <p><strong>INSTRUCTIONS:</strong></p>
-                            <p><strong>EVENT LINK:</strong> Keep it cool, Do not fall in Confusion Genjutsu, show off those skills, and let’s make this a code-tastic event!</p>
                             <p><strong>MODE:</strong> Solo.</p>
-                            <p><strong>TIME:</strong> Round 1 – Debugging (20 min), Round 2 – Programming (40 min)</p>
+                            <p><strong>TIME:</strong> Programming (40 min)</p>
                         </>
                     }
                     rules={rulesSection2} 
