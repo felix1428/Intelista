@@ -37,7 +37,7 @@ export default function Home() {
             <div className="p-6 pb-10 mt-6 space-y-6 mx-auto bg-gray-900 bg-opacity-70 dark:bg-gray-50 dark:bg-opacity-50 rounded-lg">
               <div className="space-y-2 text-center">
                 <span className="block text-2xl sm:text-3xl font-semibold text-white dark:text-gray-900">
-                  Time's Ticking - Are You Ready Buddys?
+                  Time's Ticking - Are You Ready Buddies?
                 </span>
               </div>
               <div className="timer text-gray-100 dark:text-gray-800 text-center">
