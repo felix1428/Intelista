@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 export default function Countdown() {
-  const targetDate = '2024-09-13T23:59:59';
+  const targetDate = '2025-09-13T23:59:59';
 
   const calculateTimeLeft = () => {
     const difference = +new Date(targetDate) - +new Date();
